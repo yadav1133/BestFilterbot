@@ -48,8 +48,8 @@ async def aboutCMD(client: FilterBot, message: Message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.first_name, message.from_user.id)
 
-    keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtu.be/vbloWcdxjxg'),
-                   InlineKeyboardButton('Repo', url='https://github.com/Learningbots79/BestFilterbot') ],
+    keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtube.com/@yaduvanshi.shubham.991?si=Sdc0VZcQZgqR0yj0'),
+                   InlineKeyboardButton('Repo', url='https://github.com/yadav1133/BestFilterbot.git') ],
                 [ InlineKeyboardButton('Home', callback_data='main#start'),
                   InlineKeyboardButton('Help', callback_data='main#help') ]]
 
@@ -74,8 +74,8 @@ async def maincallback(client: FilterBot, message):
         keyboard = [[ InlineKeyboardButton('Add Me To Your Chat', url=f"t.me/{bot.username}?startgroup=true") ],
                     [ InlineKeyboardButton('Help', callback_data='main#help'),
                       InlineKeyboardButton('About', callback_data='main#about') ],
-                    [ InlineKeyboardButton('Update', url='t.me/learningbots79'),
-                      InlineKeyboardButton('Support', url='t.me/learning_bots') ]]
+                    [ InlineKeyboardButton('Update', url='t.me/allmovies9090'),
+                      InlineKeyboardButton('Support', url='t.me/yadavhackingworld') ]]
         await message.message.edit(text=StartTxT.format(mention=message.from_user.mention), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
 
     elif type == "help":
@@ -84,8 +84,8 @@ async def maincallback(client: FilterBot, message):
         await message.message.edit(text=HelpTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
 
     elif type == "about":
-        keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtu.be/vbloWcdxjxg'),
-                       InlineKeyboardButton('Repo', url='https://github.com/Learningbots79/BestFilterbot') ],
+        keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtube.com/@yaduvanshi.shubham.991?si=Sdc0VZcQZgqR0yj0'),
+                       InlineKeyboardButton('Repo', url='https://github.com/yadav1133/BestFilterbot') ],
                     [ InlineKeyboardButton('Home', callback_data='main#start'),
                       InlineKeyboardButton('Help', callback_data='main#help') ]]
         await message.message.edit(text=AboutTxT, reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True)
