@@ -17,8 +17,8 @@ async def startCMD(client: FilterBot, message: Message):
       InlineKeyboardButton('Help', callback_data='main#help'),
       InlineKeyboardButton('About', callback_data='main#about')
       ],[
-      InlineKeyboardButton('Update', url='t.me/learningbots79'),
-      InlineKeyboardButton('Support', url='t.me/learning_bots')
+      InlineKeyboardButton('Update', url='t.me/allmovies9090'),
+      InlineKeyboardButton('Support', url='t.me/yadavhackingworld')
       ]]
 
     if "motech" == BOT_PICS[0]:
@@ -49,7 +49,7 @@ async def aboutCMD(client: FilterBot, message: Message):
         await db.add_user(message.from_user.first_name, message.from_user.id)
 
     keyboard = [[ InlineKeyboardButton('Tutorial', url='https://youtube.com/@yaduvanshi.shubham.991?si=Sdc0VZcQZgqR0yj0'),
-                   InlineKeyboardButton('Repo', url='https://github.com/yadav1133/BestFilterbot.git') ],
+                   InlineKeyboardButton('Repo', url='https://github.com/yadav1133/BestFilterbot') ],
                 [ InlineKeyboardButton('Home', callback_data='main#start'),
                   InlineKeyboardButton('Help', callback_data='main#help') ]]
 
