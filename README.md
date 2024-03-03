@@ -87,13 +87,6 @@ Read [this](https://github.com/PR0FESS0R-99/Filter-Bot/blob/Professor-99/variabl
 
 - `DISCONNECT_COMMAND` : default will be 'disconnect'
 
-### Credits
-
-> Thanks to [pyrogram](https://github.com/pyrogram/pyrogram)
-
-> Thanks to [TroJanzHEX](https://github.com/TroJanzHEX/Unlimited-Filter-Bot)
-
-> Thanks to [MoTech](https://github.com/PR0FESS0R-99/MoTech)
 
 ### Deploy to
 
